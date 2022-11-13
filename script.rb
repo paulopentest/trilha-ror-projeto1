@@ -3,16 +3,18 @@
 opcao = 0
 subtotal = 0.00
 
-while opcao == 1
-puts "Selecione a opção desejada: "
-puts "[1] - Comprar"
-puts "[2] - Sair"
-opcao = gets.chomp
+begin
+    puts "Selecione a opção desejada: "
+    puts "[1] - Comprar"
+    puts "[2] - Sair"
+    opcao = gets.chomp.to_i
     if opcao == 1
-        #Mostrar opções
+        puts "teste"
     else
         puts "Obrigado pela preferência, volte sempre!!"
         break
     end
-end
+end while opcao == 1
+
+
 
